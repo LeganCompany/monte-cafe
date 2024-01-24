@@ -24,6 +24,7 @@ function Hero() {
 		fontFamily: 'Prata, serif',
 		fontSize: 64,
 		color: 'white',
+		marginBottom: '-35px',
 	};
 
 	const headingStyle2 = {
@@ -35,8 +36,11 @@ function Hero() {
 	const headingStyle3 = {
 		fontFamily: 'Open Sans Condensed, sans-serif',
 		fontSize: 32,
+		fontWeight: 300,
 		color: 'white',
 		textAlign: 'left',
+		marginTop: '-25px',
+		marginBottom: '10px',
 	};
 
 	const ColoredButton = styled(Button)({
@@ -49,7 +53,6 @@ function Hero() {
 		borderRadius: 0,
 	});
 
-	// Custom styled component for the second button
 	const TransparentButton = styled(Button)({
 		backgroundColor: 'transparent',
 		color: 'white',
@@ -58,6 +61,7 @@ function Hero() {
 		border: '1px solid #EB5A47',
 		borderRadius: 0,
 		fontWeight: 300,
+		marginLeft: '40px'
 	});
 
 	return (
@@ -68,15 +72,15 @@ function Hero() {
 				alignItems="flex-start"
 				marginLeft={10}
 				width={ '60%' }
-			// spacing={2}
+				spacing={ 0 }
 			>
-				<Typography variant="h1" style={headingStyle1}>
+				<Typography variant="p" style={headingStyle1}>
 					Welcome to
 				</Typography>
-				<Typography variant="h1" style={headingStyle2}>
+				<Typography variant="p" style={headingStyle2}>
 					Monte Cafe
 				</Typography>
-				<Typography variant="h1" style={headingStyle3}>
+				<Typography variant="p" style={headingStyle3}>
 					Monte Cafe in downtown Ulaanbaatar offers a cozy retreat for all customers. Enjoy our welcoming atmosphere and excellent coffee in the heart of the city.
 				</Typography>
 				<Box>
