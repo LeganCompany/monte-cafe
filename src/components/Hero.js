@@ -14,9 +14,8 @@ function Hero() {
 		backgroundImage: `url(${background})`,
 		backgroundSize: 'cover',
 		width: '100%',
-		height: '914px',
+		height: '100vh', // Height relative to viewport height
 		display: 'flex',
-		// justifyContent: 'center',
 		alignItems: 'center',
 	};
 
@@ -71,8 +70,8 @@ function Hero() {
 				justifyContent="center"
 				alignItems="flex-start"
 				marginLeft={10}
-				width={ '60%' }
-				spacing={ 0 }
+				width={'60%'}
+				spacing={0}
 			>
 				<Typography variant="p" style={headingStyle1}>
 					Welcome to
