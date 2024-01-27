@@ -6,7 +6,7 @@ import Typography from '@mui/material/Typography';
 import { styled } from '@mui/system';
 
 
-import background from './../img/frame1.png';
+import background from './../img/hero-background.png';
 
 // Component for displaying the very first screen of the website. (Welcome to Monte Cafe)
 function Hero() {
