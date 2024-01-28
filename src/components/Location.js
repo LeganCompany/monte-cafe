@@ -2,13 +2,19 @@
 import React from 'react';
 import Box from '@mui/system/Box';
 import Stack from '@mui/system/Stack';
-// import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-// import { styled } from '@mui/system';
+// import MapContainer from './MapContainer';
 
 
 // A component for displaying the location of the cafe.
 function Location() {
+
+	// const businessName = 'Your Business Name';
+	// const location = {
+	// 	lat: 37.7749, // Latitude of business location
+	// 	lng: -122.4194 // Longitude of business location
+	// };
+
 	const divStyle = {
 		width: '100%',
 		height: '100vh',
@@ -33,33 +39,8 @@ function Location() {
 	const subHeadingStyle = {
 		fontFamily: 'Open Sans Condensed Light, sans-serif',
 		fontSize: 36,
-		// fontWeight: 300,
 		color: 'white',
-		// textAlign: 'left',
-		// marginTop: '-25px',
-		// marginBottom: '10px',
 	};
-
-	// const ColoredButton = styled(Button)({
-	// 	backgroundColor: '#EB5A47',
-	// 	color: 'white',
-	// 	fontSize: 32,
-	// 	fontFamily: 'Open Sans Condensed, sans-serif',
-	// 	fontWeight: 300,
-	// 	border: '1px solid #EB5A47',
-	// 	borderRadius: 0,
-	// });
-
-	// const TransparentButton = styled(Button)({
-	// 	backgroundColor: 'transparent',
-	// 	color: 'white',
-	// 	fontSize: 32,
-	// 	fontFamily: 'Open Sans Condensed, sans-serif',
-	// 	border: '1px solid #EB5A47',
-	// 	borderRadius: 0,
-	// 	fontWeight: 300,
-	// 	marginLeft: '40px'
-	// });
 
 	return (
 		<div style={divStyle}>
@@ -110,11 +91,15 @@ function Location() {
 							</Typography>
 						</Box>
 					</Stack>
-					<div style={{
-						border: '1px solid black',
-						width: '70%',
-						margin: '30px 20px',
-					}}></div>
+					{/* <MapContainer businessName={businessName} location={location} /> */}
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d167.12561142450875!2d106.91149231975598!3d47.91684816799454!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d96932cad242cfb%3A0x2a357c007c918f95!2sMonte%20Cafe!5e0!3m2!1sen!2sau!4v1706425985252!5m2!1sen!2sau"
+						width='70%'
+						style={{ border: '0', margin: '30px' }}
+						allowFullScreen=''
+						loading='lazy'
+						referrerPolicy='no-referrer-when-downgrade'
+					></iframe>
 				</Stack>
 			</Stack>
 		</div >
