@@ -8,7 +8,7 @@ import Typography from '@mui/material/Typography';
 
 
 // A component for displaying the location of the cafe.
-function Hero() {
+function Location() {
 	const divStyle = {
 		width: '100%',
 		height: '100vh',
@@ -121,4 +121,4 @@ function Hero() {
 	);
 }
 
-export default Hero;
+export default Location;
