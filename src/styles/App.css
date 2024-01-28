@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: Open Sans Condensed Light;
+  src: url('../../public/fonts/OpenSans-CondensedLight.ttf');
+}
+
+@font-face {
+  font-family: Open Sans Condensed Bold;
+  src: url('../../public/fonts/OpenSans-CondensedBold.ttf');
+}

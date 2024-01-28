@@ -33,7 +33,7 @@ function Hero() {
 	};
 
 	const headingStyle3 = {
-		fontFamily: 'Open Sans Condensed, sans-serif',
+		fontFamily: 'Open Sans Condensed Light, sans-serif',
 		fontSize: 32,
 		fontWeight: 300,
 		color: 'white',
